@@ -1,0 +1,27 @@
+---
+tap_install:
+  values:
+    shared:
+      ingress_domain: "aks-mdc.cloudfocused.in"
+      image_registry:
+        project_path: "tapmdc.azurecr.io/share-repo/aks"
+        secret:
+          name: ""
+          namespace: ""
+    ceip_policy_disclosed: true 
+    supply_chain: testing_scanning
+    ootb_supply_chain_testing_scanning:
+      gitops:
+        ssh_secret: ""
+    metadata_store:
+    ns_for_export_app_cert: "my-apps"
+    app_service_type: ClusterIP
+    scanning:
+    metadataStore:
+        url: "" # Deactivate embedded integration since it's deprecated.
+    grype:
+    targetImagePullSecret: "registry-credentials"
+    namespace: my-apps
+    metadataStore:
+        url: ""
+        #url: "https://metadata-store.aks-mdc.cloudfocused.in" # The base URL where the Store deployment can be reached
