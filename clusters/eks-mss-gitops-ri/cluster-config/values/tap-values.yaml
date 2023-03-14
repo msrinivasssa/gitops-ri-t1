@@ -13,6 +13,6 @@ tap_install:
         url: "" # Deactivate embedded integration since it's deprecated.
     grype:
       targetImagePullSecret: "registry-credentials"
-      namespace: my-apps
+      namespace: default
       metadataStore:
         url: ""
