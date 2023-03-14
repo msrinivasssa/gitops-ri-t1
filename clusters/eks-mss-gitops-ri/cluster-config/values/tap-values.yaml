@@ -1,0 +1,18 @@
+---
+tap_install:
+  values:
+    shared:
+      ingress_domain: "eks-gitops.cloudfocused.in"
+    ceip_policy_disclosed: true 
+    supply_chain: testing_scanning
+    metadata_store:
+      ns_for_export_app_cert: "my-apps"
+      app_service_type: ClusterIP
+    scanning:
+      metadataStore:
+        url: "" # Deactivate embedded integration since it's deprecated.
+    grype:
+      targetImagePullSecret: "registry-credentials"
+      namespace: my-apps
+      metadataStore:
+        url: ""
