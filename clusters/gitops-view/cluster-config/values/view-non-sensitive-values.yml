@@ -4,6 +4,8 @@ tap_install:
     profile: view
     shared:
       ingress_domain: "tap.gitview.mss.dapd.net"
+      kubernetes_distribution: openshift
+      kubernetes_version: 1.25.0
     ceip_policy_disclosed: true
     metadata_store:
       ns_for_export_app_cert: "my-apps"
