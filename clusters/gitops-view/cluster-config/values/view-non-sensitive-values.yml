@@ -1,0 +1,10 @@
+---
+tap_install:
+  values:
+    profile: view
+    shared:
+      ingress_domain: "tap.gitview.mss.dapd.net"
+    ceip_policy_disclosed: true
+    metadata_store:
+      ns_for_export_app_cert: "my-apps"
+      app_service_type: ClusterIP
