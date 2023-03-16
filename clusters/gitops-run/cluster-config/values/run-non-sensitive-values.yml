@@ -1,0 +1,18 @@
+---
+tap_install:
+  values:
+    profile: run
+    shared:
+      ingress_domain: "tap.gitrun.mss.dapd.net"
+      kubernetes_distribution: openshift
+      kubernetes_version: 1.25.0
+    ceip_policy_disclosed: true 
+    supply_chain: testing_scanning
+    ootb_supply_chain_testing_scanning:
+      gitops:
+        ssh_secret: ""
+    appliveview_connector:
+      backend:
+        sslDisabled: TRUE
+        ingressEnabled: true
+        host: appliveview.tap.gitbuild.mss.dapd.net
