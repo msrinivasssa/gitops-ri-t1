@@ -1,0 +1,13 @@
+---
+tap_install:
+  values:
+    ceip_policy_disclosed: true
+    supply_chain: testing_scanning
+    metadata_store:
+      ns_for_export_app_cert: "my-apps"
+      app_service_type: ClusterIP
+    scanning:
+      metadataStore:
+        url: ""
+    grype:
+      namespace: default
