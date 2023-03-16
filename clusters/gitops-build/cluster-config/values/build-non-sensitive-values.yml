@@ -7,7 +7,7 @@ tap_install:
       kubernetes_distribution: openshift
       kubernetes_version: 1.25.0
     ceip_policy_disclosed: true
-    supply_chain: testing_scanning
+    supply_chain: basic
     metadata_store:
       ns_for_export_app_cert: "my-apps"
       app_service_type: ClusterIP
