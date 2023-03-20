@@ -1,0 +1,17 @@
+---
+secrets:
+  eso:
+    aws:
+      tanzu_sync_secrets:
+        roleARN: arn:aws:iam::752592854961:role/mss-gitops-ri--tanzu-sync-secrets
+    remote_refs:
+      sync_git_ssh:
+        ssh_private_key:
+          key: dev/mss-gitops-ri/tanzu-sync/sync-git-ssh
+          property: ssh-privatekey
+        ssh_known_hosts:
+          key: dev/mss-gitops-ri/tanzu-sync/sync-git-ssh
+          property: ssh-knownhosts
+      install_registry_dockerconfig:
+        dockerconfigjson:
+          key: dev/mss-gitops-ri/tanzu-sync/install-registry-dockerconfig

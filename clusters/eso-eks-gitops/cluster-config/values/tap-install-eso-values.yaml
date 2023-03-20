@@ -1,0 +1,11 @@
+---
+tap_install:
+  secrets:
+    eso:
+      aws:
+        tap_install_secrets:
+          roleARN: arn:aws:iam::752592854961:role/mss-gitops-ri--tap-install-secrets
+      remote_refs:
+        tap_sensitive_values:
+          sensitive_tap_values_yaml:
+            key: dev/mss-gitops-ri/tap/sensitive-values.yaml
