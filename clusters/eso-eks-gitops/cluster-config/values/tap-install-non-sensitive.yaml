@@ -1,0 +1,17 @@
+tap_install:
+  values:
+    shared:
+      ingress_domain: "aks-mdc.cloudfocused.in"
+    ceip_policy_disclosed: true 
+    supply_chain: testing_scanning
+    metadata_store:
+      ns_for_export_app_cert: "my-apps"
+      app_service_type: ClusterIP
+    scanning:
+      metadataStore:
+        url: "" 
+    grype:
+      targetImagePullSecret: "registry-credentials"
+      namespace: my-apps
+      metadataStore:
+        url: ""
