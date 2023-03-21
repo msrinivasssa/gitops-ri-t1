@@ -3,6 +3,7 @@ tap_install:
     shared:
       ingress_domain: "aks-mdc.cloudfocused.in"
     ceip_policy_disclosed: true 
+    profile: full
     supply_chain: testing_scanning
     metadata_store:
       ns_for_export_app_cert: "my-apps"
