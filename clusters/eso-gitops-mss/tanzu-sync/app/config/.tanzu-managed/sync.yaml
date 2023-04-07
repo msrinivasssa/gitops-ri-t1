@@ -20,7 +20,7 @@ spec:
         url: #@ data.values.git.url
         ref: #@ data.values.git.ref
         secretRef:
-          name: ssh-secret-manual
+          name: sync-git-ssh
         subPath: #@ data.values.git.sub_path
   template:
     - ytt:
